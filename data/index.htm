@@ -1,0 +1,29 @@
+<script type="text/javascript" src="config.json"></script>
+<script type="text/javascript" src=".js"></script>
+  <div id="controls" style="display: block; border: 1px solid rgb(68, 68, 68); padding: 5px; margin: 5px; width: 362px; background-color: rgb(238, 238, 238);">
+    <label>Period (ms):</label>
+    <input type="number" id="refresh-rate"/>
+    <input type="button" id="start-button" value="Start"/>
+    <input type="button" id="stop-button" value="Stop"/>
+
+
+    <form>
+    <table><tr>
+    <td><input type='range' length='100' orient='horizontal' min='0' max='100' id='led0_dim' value='' step='1' oninput='sendToESP("http://192.168.88.11/post","led0",this.value)'></td>
+    <td><input type='range' length='100' orient='horizontal' min='0' max='100' id='led1_dim' value='' step='1' oninput='sendToESP("led1",this.value)'></td>
+    <td><input type='range' length='100' orient='horizontal' min='0' max='100' id='led2_dim' value='' step='1' oninput='sendToESP("led2",this.value)'></td>
+    </tr><tr>
+    <td><span id='led0'></span></td>
+    <td><span id='led1'></span></td>
+    <td><span id='led2'></span></td>
+    </tr></table>
+    </form>
+
+
+
+    
+  </div><!-- #controls -->
+  <!--div id="heap"></div-->
+  <div id="analog"></div><br>
+  <div id="temp">t</div><br>
+  <div id="digital"></div>
