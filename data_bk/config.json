@@ -1,1 +1,0 @@
-{"ssid":"BCE_ETO_BECbMA_CTPAHHO","pass":"1208852007","ip":[192,168,88,11],"netmask":[255,255,255,0],"gateway":[192,168,88,1],"dns":[192,168,88,1],"dhcp":true,"ntp":"pool.ntp.org","NTPperiod":15,"timeZone":10,"daylight":true,"deviceName":"ESP8266_11"}
